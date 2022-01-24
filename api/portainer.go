@@ -1393,7 +1393,7 @@ const (
 )
 
 // List of supported features
-var SupportedFeatureFlags = []Feature{}
+var SupportedFeatureFlags = []Feature{"dev-metrics"}
 
 const (
 	_ AuthenticationMethod = iota
