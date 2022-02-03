@@ -287,6 +287,25 @@
               </div>
             </div>
             <!-- !Region -->
+            <!-- S3 Endpoint -->
+            <div class="form-group">
+              <label for="endpoint" class="col-sm-3 col-lg-2 control-label text-left">Endpoint</label>
+              <div class="col-sm-9 col-lg-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="https://custom-endpoint:9000"
+                  id="endpoint"
+                  name="endpoint"
+                  ng-model="formValues.endpoint"
+                  ng-required="formValues.scheduleAutomaticBackups"
+                  limited-feature-dir="{{::s3BackupFeatureId}}"
+                  limited-feature-disabled
+                  limited-feature-class="limited-be"
+                />
+              </div>
+            </div>
+            <!-- !S3 Endpoint -->
             <!-- Bucket name -->
             <div class="form-group">
               <label for="bucket_name" class="col-sm-3 col-lg-2 control-label text-left">Bucket name</label>
